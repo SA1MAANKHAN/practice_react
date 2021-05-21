@@ -4,19 +4,19 @@ a {
 
 .card__container {
   align-self: center;
-  height: 45vh;
+  justify-self: center;
   width: 80%;
+  padding: 40px 0 0;
   display: flex;
   overflow-x: scroll;
 
   align-items: flex-end;
-  margin-top: 100px;
   padding-left: 35px;
   padding-right: 35px;
 }
 
 @media (max-height: 720px) {
   .card__container {
-    height: 80vh;
+    /* height: 80vh; */
   }
 }

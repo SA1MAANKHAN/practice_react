@@ -35,7 +35,7 @@ function FoodFact() {
   if (foodFact) {
     return (
       <div className="foodFact">
-        <Navbar />
+        {/* <Navbar /> */}
         <h1>{foodFact}</h1>
         <button onClick={getFoodFact}>One More!</button>
       </div>

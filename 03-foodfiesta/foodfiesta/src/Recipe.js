@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import { Img } from "react-image";
 import "./Recipe.css";
 import TimerIcon from "@material-ui/icons/Timer";
@@ -8,7 +7,7 @@ import LocalDiningIcon from "@material-ui/icons/LocalDining";
 function Recipe({ recipeData }) {
   return (
     <div className="Recipe">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="recipe__container">
         <div className="recipe__img__container">
           <Img className="recipe__img" src={recipeData.image} alt="" />

@@ -35,7 +35,7 @@ function SearchRecipe() {
   if (recipes.length < 1) {
     return (
       <div className="searchRecipe">
-        <Navbar />
+        {/* <Navbar /> */}
         {/* <h1>Search</h1> */}
         <form onSubmit={getSearch} className=" search__bar">
           <input
@@ -56,7 +56,7 @@ function SearchRecipe() {
   if (recipes.length >= 1) {
     return (
       <div className="searchRecipe">
-        <Navbar />
+        {/* <Navbar /> */}
         {/* <h1>Search</h1> */}
         <form onSubmit={getSearch} className=" search__bar">
           <input

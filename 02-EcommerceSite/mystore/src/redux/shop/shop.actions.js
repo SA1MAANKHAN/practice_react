@@ -5,6 +5,10 @@ import {
   convertCollectionsSnapshotToMap,
 } from "../../firebase/firebase";
 
+export const fetchCollectionsStart = () => ({
+  type: ShopActionTypes.FETCH_COLLECTIONS_START,
+});
+
 export const updateCollections = (collectionsMap) => ({
   type: ShopActionTypes.UPDATE_COLLECTIONS,
   payload: collectionsMap,
@@ -23,14 +27,14 @@ export const fetchCollectionFaliure = (errorMessage) => ({
 export const fetchCollectionsStartAsync = () => {
   return (dispatch) => {
     const collectionRef = firestore.collection("collections");
-
-    dispatch(fetchCollectionsStartAsync());
+    dispatch(fetchCollectionsStart());
 
     collectionRef
-      .onSnapshot(async (snapshot) => {
+      .get()
+      .then((snapshot) => {
         const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
         dispatch(fetchCollectionSuccess(collectionsMap));
       })
-      .catch((err) => dispatch(fetchCollectionFaliure(err.message)));
+      .catch((error) => dispatch(fetchCollectionFaliure(error.message)));
   };
 };

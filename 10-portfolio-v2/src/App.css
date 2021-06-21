@@ -101,7 +101,7 @@ body {
   text-align: center;
   font-size: 35px;
   margin-left: 30px;
-  font-family: "Cinzel Decorative", cursive;
+  /* font-family: "Cinzel Decorative", cursive; */
   animation: blink 900ms linear infinite alternate;
 }
 
@@ -1249,3 +1249,8 @@ h3 {
   width: 8px;
 }
 /* ==================== CUSTOM SCROLLBAR END ======================== */
+
+.svg__loader {
+  height: 100px;
+  margin: 100px;
+}

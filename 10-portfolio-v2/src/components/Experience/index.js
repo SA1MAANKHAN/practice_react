@@ -12,7 +12,7 @@ import mongoLogo from "../../assets/SkillsImages/mongologo.png";
 import SingleExperience from "./SingleExperience";
 
 function Experience() {
-  let percentage = [90, 85, 50, 50, 75, 90, 30, 40];
+  let percentage = [90, 95, 90, 80, 80, 85, 80, 75];
   let [html, css, js, reactjs, materialui, mongoDb, nodejs, expressjs] =
     percentage;
 

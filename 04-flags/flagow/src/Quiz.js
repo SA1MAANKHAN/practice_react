@@ -4,7 +4,7 @@ import Loading from "./Loading";
 import Navbar from "./Navbar";
 import { numOfLives, numOfQuestion } from "./config";
 import "./Quiz.css";
-import { Howl, Howler } from "howler";
+import { Howl } from "howler";
 
 import { Redirect, useParams } from "react-router";
 import FavoriteIcon from "@material-ui/icons/Favorite";

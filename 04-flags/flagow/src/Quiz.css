@@ -1,9 +1,12 @@
 .quiz {
+  align-self: center;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .quiz__timer {
@@ -51,12 +54,12 @@
 }
 .quiz__hint > h2 {
   text-align: center;
-  color: white;
+  color: #0554a4;
 }
 
 .quiz__hint > p {
   text-align: center;
-  color: rgb(122, 122, 122);
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
@@ -99,7 +102,7 @@
 
 @media (max-width: 450px) {
   .quiz__hints {
-    justify-content: center;
+    justify-content: space-around;
   }
   .quiz__question {
     height: 70vw;

@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4b2351b2.chunk.css",
+    "main.js": "/static/js/main.abc242fc.chunk.js",
+    "main.js.map": "/static/js/main.abc242fc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d0605945.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
+    "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
+    "static/js/2.bae67105.chunk.js": "/static/js/2.bae67105.chunk.js",
+    "static/js/2.bae67105.chunk.js.map": "/static/js/2.bae67105.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.4b2351b2.chunk.css.map": "/static/css/main.4b2351b2.chunk.css.map",
+    "static/js/2.bae67105.chunk.js.LICENSE.txt": "/static/js/2.bae67105.chunk.js.LICENSE.txt",
+    "static/media/alcatraz.e157f863.png": "/static/media/alcatraz.e157f863.png",
+    "static/media/amazon.5b0fb3b3.png": "/static/media/amazon.5b0fb3b3.png",
+    "static/media/covinfo.2ef3de84.png": "/static/media/covinfo.2ef3de84.png",
+    "static/media/firebase.c4f13648.png": "/static/media/firebase.c4f13648.png",
+    "static/media/flagow.96fd095b.png": "/static/media/flagow.96fd095b.png",
+    "static/media/foodfiesta.b2866f59.png": "/static/media/foodfiesta.b2866f59.png",
+    "static/media/happyhomes.1c7f393c.png": "/static/media/happyhomes.1c7f393c.png",
+    "static/media/mongo.62f6b1e4.png": "/static/media/mongo.62f6b1e4.png",
+    "static/media/mongologo.41ae1969.png": "/static/media/mongologo.41ae1969.png",
+    "static/media/node.c6649cb1.png": "/static/media/node.c6649cb1.png",
+    "static/media/nodelogo.a4713ff2.png": "/static/media/nodelogo.a4713ff2.png",
+    "static/media/reactjs.222b6b69.png": "/static/media/reactjs.222b6b69.png",
+    "static/media/redux.543b98d3.png": "/static/media/redux.543b98d3.png",
+    "static/media/shope.1f188fb8.png": "/static/media/shope.1f188fb8.png",
+    "static/media/video.fe701c20.mp4": "/static/media/video.fe701c20.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0605945.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.bae67105.chunk.js",
+    "static/css/main.4b2351b2.chunk.css",
+    "static/js/main.abc242fc.chunk.js"
+  ]
+}

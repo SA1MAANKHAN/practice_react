@@ -10,7 +10,7 @@ function Navbar() {
         <Link className="navbar__link" to="/">
           <HomeIcon style={{ fontSize: 40, color: "#5dfdcb" }} />
         </Link>
-        <a className="navbar__link" href="https://salmaan.netlify.app/">
+        <a className="navbar__link" href="https://itssalmaank.web.app/">
           <h2>About</h2>
         </a>
       </div>

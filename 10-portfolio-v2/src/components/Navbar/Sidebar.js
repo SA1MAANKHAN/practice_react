@@ -14,121 +14,121 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
 
 const useStyles = makeStyles({
-	list: {
-		width: 320,
-	},
-	fullList: {
-		width: "auto",
-	},
+  list: {
+    width: 320,
+  },
+  fullList: {
+    width: "auto",
+  },
 });
 
 function Sidebar() {
-	const classes = useStyles();
-	const [state, setState] = React.useState({
-		right: false,
-	});
+  const classes = useStyles();
+  const [state, setState] = React.useState({
+    right: false,
+  });
 
-	const toggleDrawer = (anchor, open) => (event) => {
-		if (
-			event.type === "keydown" &&
-			(event.key === "Tab" || event.key === "Shift")
-		) {
-			return;
-		}
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
 
-		setState({ ...state, [anchor]: open });
-	};
+    setState({ ...state, [anchor]: open });
+  };
 
-	// SCROLLING VARIABLES
-	const ScrollDuration = 1200;
-	const ScrollDelay = 500;
+  // SCROLLING VARIABLES
+  const ScrollDuration = 1200;
+  const ScrollDelay = 500;
 
-	const list = (anchor) => (
-		<div
-			className={clsx(classes.list)}
-			role="presentation"
-			onClick={toggleDrawer(anchor, false)}
-			onKeyDown={toggleDrawer(anchor, false)}
-		>
-			<List>
-				<ImCross className="crossISidebar" style={{ fontSize: "4.5rem" }} />
-				<Link
-					activeClass="activeNav"
-					to="About"
-					smooth={true}
-					duration={ScrollDuration}
-					delay={ScrollDelay}
-					spy={true}
-					onClick={toggleDrawer(anchor, false)}
-				>
-					<ListItem button>
-						<ListItemText>About</ListItemText>
-					</ListItem>
-				</Link>
-				<Link
-					activeClass="activeNav"
-					to="Experience"
-					smooth={true}
-					duration={ScrollDuration}
-					offset={5}
-					delay={ScrollDelay}
-					spy={true}
-					onClick={toggleDrawer(anchor, false)}
-				>
-					<ListItem button>
-						<ListItemText>Experience</ListItemText>
-					</ListItem>
-				</Link>
-				<Link
-					activeClass="activeNav"
-					to="Projects"
-					smooth={true}
-					delay={ScrollDelay}
-					duration={ScrollDuration}
-					spy={true}
-					onClick={toggleDrawer(anchor, false)}
-				>
-					<ListItem button>
-						<ListItemText>My Projects</ListItemText>
-					</ListItem>
-				</Link>
-				<Link
-					activeClass="activeNav"
-					// to="Contact"
-					to="bottomFooter"
-					smooth={true}
-					delay={ScrollDelay}
-					duration={ScrollDuration}
-					spy={true}
-					onClick={toggleDrawer(anchor, false)}
-				>
-					<ListItem button>
-						<ListItemText>Contact</ListItemText>
-					</ListItem>
-				</Link>
-			</List>
-		</div>
-	);
+  const list = (anchor) => (
+    <div
+      className={clsx(classes.list)}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <List>
+        <ImCross className="crossISidebar" style={{ fontSize: "4.5rem" }} />
+        <Link
+          activeClass="activeNav"
+          to="About"
+          smooth={true}
+          duration={ScrollDuration}
+          delay={ScrollDelay}
+          spy={true}
+          onClick={toggleDrawer(anchor, false)}
+        >
+          <ListItem button>
+            <ListItemText>About</ListItemText>
+          </ListItem>
+        </Link>
+        <Link
+          activeClass="activeNav"
+          to="Experience"
+          smooth={true}
+          duration={ScrollDuration}
+          offset={5}
+          delay={ScrollDelay}
+          spy={true}
+          onClick={toggleDrawer(anchor, false)}
+        >
+          <ListItem button>
+            <ListItemText>Experience</ListItemText>
+          </ListItem>
+        </Link>
+        <Link
+          activeClass="activeNav"
+          to="Projects"
+          smooth={true}
+          delay={ScrollDelay}
+          duration={ScrollDuration}
+          spy={true}
+          onClick={toggleDrawer(anchor, false)}
+        >
+          <ListItem button>
+            <ListItemText>My Projects</ListItemText>
+          </ListItem>
+        </Link>
+        <Link
+          activeClass="activeNav"
+          // to="Contact"
+          to="bottomFooter"
+          smooth={true}
+          delay={ScrollDelay}
+          duration={ScrollDuration}
+          spy={true}
+          onClick={toggleDrawer(anchor, false)}
+        >
+          <ListItem button>
+            <ListItemText>Contact</ListItemText>
+          </ListItem>
+        </Link>
+      </List>
+    </div>
+  );
 
-	return (
-		<div>
-			{["right"].map((anchor) => (
-				<React.Fragment key={anchor}>
-					<GiHamburgerMenu
-						onClick={toggleDrawer(anchor, true)}
-						style={{ color: "white", fontSize: "2.5rem", cursor: "pointer" }}
-					/>
-					<Drawer
-						anchor={anchor}
-						open={state[anchor]}
-						onClose={toggleDrawer(anchor, false)}
-					>
-						{list(anchor)}
-					</Drawer>
-				</React.Fragment>
-			))}
-		</div>
-	);
+  return (
+    <div>
+      {["right"].map((anchor) => (
+        <React.Fragment key={anchor}>
+          <GiHamburgerMenu
+            onClick={toggleDrawer(anchor, true)}
+            style={{ color: "white", fontSize: "2.5rem", cursor: "pointer" }}
+          />
+          <Drawer
+            anchor={anchor}
+            open={state[anchor]}
+            onClose={toggleDrawer(anchor, false)}
+          >
+            {list(anchor)}
+          </Drawer>
+        </React.Fragment>
+      ))}
+    </div>
+  );
 }
 
 export default Sidebar;

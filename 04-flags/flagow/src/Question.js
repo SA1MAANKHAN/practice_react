@@ -2,7 +2,7 @@ import React from "react";
 
 function Question({ arrayCounrties, correctIndex, quizType }) {
   console.log(quizType);
-  if (quizType == "Flags") {
+  if (quizType === "Flags") {
     return (
       <div className="quiz__question">
         <div className="quiz__hints">
@@ -23,7 +23,7 @@ function Question({ arrayCounrties, correctIndex, quizType }) {
     );
   }
 
-  if (quizType == "Capitals") {
+  if (quizType === "Capitals") {
     return (
       <div className="quiz__question">
         <div className="quiz__hints">
@@ -46,7 +46,7 @@ function Question({ arrayCounrties, correctIndex, quizType }) {
     );
   }
 
-  if (quizType == "Currency") {
+  if (quizType === "Currency") {
     return (
       <div className="quiz__question">
         <div className="quiz__hints">

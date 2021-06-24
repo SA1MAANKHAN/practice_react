@@ -714,13 +714,13 @@ h3 {
 }
 
 .section-title h2 b {
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 80%, var(--blueContrast));
-  background-position: initial;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0) 80%, var(--blueContrast)); */
+  /* background-position: initial;
   background-repeat: initial;
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
-  background-color: initial;
+  background-color: initial; */
   font-weight: 600 !important;
   background-size: 90px 1.1em !important;
 }

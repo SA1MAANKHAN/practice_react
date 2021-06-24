@@ -30,9 +30,9 @@ const Home = () => {
           </Fade>
           <Fade duration={2000} delay={2400} right cascade>
             <h3>
-              Hey! Are you looking For a Web developer or React developer? I
-              have three years of experience and working to make your
-              development faster, easier and efficient.
+              I am a Web developer & designer. Currently, I'm pursuing my
+              Computer Science & Engineering degree from Punjabi University,
+              Patiala. I love learing new things and to explore.
             </h3>
           </Fade>
           {/* <!--===================== BLOB BUTTON START  =====================--> */}

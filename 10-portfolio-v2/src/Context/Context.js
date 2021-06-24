@@ -36,7 +36,7 @@ cases.`,
       url: "https://happpyhomes.web.app/",
     },
     {
-      title: "Shope",
+      title: "MiniMall",
       img: shope,
       description: `This is fully functional Ecommerece website made using react and redux. And has
       awesome feautures like sign-in, payment using stripe, cart, and much more. `,

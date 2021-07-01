@@ -24,17 +24,16 @@ const Home = () => {
         <div className="text-center">
           <Fade delay={2100} right cascade>
             <h1>
-              Hey there! My name is
+              Hey there! I'm
               <span style={{ fontWeight: 800 }}> SALMAAN </span>
             </h1>
           </Fade>
-          <Fade duration={2000} delay={2400} right cascade>
-            <h3>
-              I am a Web developer & designer. Currently, I'm pursuing my
-              Computer Science & Engineering degree from Punjabi University,
-              Patiala. I love learing new things and to explore.
-            </h3>
-          </Fade>
+          {/* <Fade duration={2000} delay={2400} right cascade> */}
+          <h3>
+            A creative MERN stack Web developer-designer.
+            {/* I love learing new things and to explore. */}
+          </h3>
+          {/* </Fade> */}
           {/* <!--===================== BLOB BUTTON START  =====================--> */}
           <a href="mailto:leosalmaan5@gmail.com">
             <Flip delay={2600} duration={3200} bottom>
